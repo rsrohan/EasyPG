@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="30dp"
+    tools:context=".NewMangerActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#000000"
+        android:layout_above="@+id/emailsignup"
+        android:text="Signup using your email."
+        android:padding="30dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:id="@+id/emailsignup"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:hint="Email"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="10dp"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/passwordemailsignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:hint="Create Password"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/emailsignup"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/signupemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:background="@drawable/background"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/passwordemailsignup"
+        android:layout_marginTop="15dp"/>
+</RelativeLayout>

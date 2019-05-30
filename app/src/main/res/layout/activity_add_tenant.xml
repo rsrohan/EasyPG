@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:paddingHorizontal="20dp"
+    android:layout_height="match_parent"
+    tools:context=".AddTenantActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#000000"
+        android:text="Enter details..."
+        android:padding="30dp"
+        android:id="@+id/textt"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:id="@+id/tenantname"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:hint="Tenant name"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/textt"
+        android:padding="10dp" />
+    <EditText
+        android:id="@+id/tenantphone"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:text="+91"
+        android:inputType="number"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tenantname"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="10dp" />
+    <EditText
+        android:id="@+id/room"
+        android:layout_below="@+id/tenantphone"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:hint="ROOM"
+        android:inputType="number"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/rentamount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:hint="rentAmount"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/room"
+        android:inputType="number" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/rentamount"
+        android:layout_marginTop="25dp"
+        android:text="add tenant"
+        android:textColor="#000000"
+        android:padding="20dp"
+        android:id="@+id/addtodatabase"
+        />
+
+</RelativeLayout>

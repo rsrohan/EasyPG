@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to EasyPG... Press the option with which you want to continue. "
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:padding="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold|italic"
+        android:layout_centerInParent="true"
+        android:layout_above="@+id/managerbtn"
+        android:layout_marginBottom="20dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue as MANAGER"
+        android:id="@+id/managerbtn"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background"
+        android:padding="10dp"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue as TENANT"
+        android:background="@drawable/background"
+        android:padding="10dp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/managerbtn"
+        android:layout_marginTop="25dp"
+        android:id="@+id/tenantbtn"/>
+
+
+</RelativeLayout>

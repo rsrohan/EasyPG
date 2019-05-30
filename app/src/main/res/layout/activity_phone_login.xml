@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="30dp"
+    tools:context=".PhoneLoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:layout_above="@+id/phone"
+        android:layout_centerInParent="true"
+        android:text="Logging in as TENANT"
+        android:textColor="#000000"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerInParent="true"
+        android:text="+91"
+        android:padding="10dp"
+        android:inputType="phone" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phone"
+        android:id="@+id/getverified"
+        android:text="get verification code"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/passwordphone"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:hint="Verification Code"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/getverified"
+        android:inputType="numberPassword" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginusingphone"
+        android:layout_below="@+id/passwordphone"
+        android:layout_centerInParent="true"
+        android:text="Signup/signin"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background"/>
+
+
+</RelativeLayout>

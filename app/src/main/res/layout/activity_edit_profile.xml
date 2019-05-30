@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:text="take a picture to upload"
+        android:layout_alignParentTop="true"
+        android:id="@+id/takepicture"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:layout_below="@+id/takepicture"
+        android:text="select picture from gallery"
+        android:layout_marginTop="20dp"
+        android:id="@+id/selectpicture"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectpicture"
+        android:layout_marginTop="20dp"
+        android:id="@+id/editname"
+        android:padding="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editname"
+        android:layout_marginTop="20dp"
+        android:id="@+id/editphone"
+        android:padding="10dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/background"
+        android:text="save details"
+        android:padding="10dp"
+        android:id="@+id/savedetails"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

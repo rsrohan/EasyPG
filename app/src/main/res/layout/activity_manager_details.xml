@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="30dp"
+    tools:context=".ManagerDetailsActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:textColor="#000000"
+        android:text="Enter details..."
+        android:padding="30dp"
+        android:id="@+id/textt"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+
+    <EditText
+        android:id="@+id/managername"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:hint="Your name"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/textt"
+        android:padding="10dp" />
+    <EditText
+        android:id="@+id/managerphone"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:text="+91"
+        android:inputType="number"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/managername"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="10dp" />
+    <EditText
+        android:id="@+id/pgname"
+        android:layout_below="@+id/managerphone"
+        android:layout_marginTop="15dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:hint="PG"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/pgpincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:padding="10dp"
+        android:hint="Pincode"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/pgname"
+        android:inputType="number" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pgpincode"
+        android:background="@drawable/background"
+        android:text="select date"
+        android:textColor="#000000"
+        android:padding="10dp"
+        android:id="@+id/date"
+        android:layout_marginTop="15dp"/>
+
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="@drawable/background"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/date"
+        android:layout_marginTop="15dp"/>
+
+
+
+</RelativeLayout>
