@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:856665865017:android:8bb1bcb01e5bf41c",
         "android_client_info": {
-          "package_name": "com.example.easypg"
+          "package_name": "com.stpl.pg4me"
         }
       },
       "oauth_client": [
@@ -18,7 +18,7 @@
           "client_id": "856665865017-dgbo5v7r65g7ifl70meo4m2ugrriokae.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.easypg",
+            "package_name": "com.stpl.pg4me",
             "certificate_hash": "f6ef91ac350122957ad3e6d739efdec9f8530db6"
           }
         },

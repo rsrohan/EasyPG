@@ -1,4 +1,4 @@
-package com.example.easypg;
+package com.stpl.pg4me;
 
 import android.annotation.SuppressLint;
 import android.app.DatePickerDialog;
@@ -12,7 +12,7 @@ import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.easypg.Class.ManagerDetailsClass;
+import com.stpl.pg4me.Class.ManagerDetailsClass;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseException;

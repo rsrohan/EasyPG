@@ -1,4 +1,4 @@
-package com.example.easypg;
+package com.stpl.pg4me;
 
 import android.Manifest;
 import android.app.Activity;
@@ -20,7 +20,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.easypg.Class.BoardedTenantClass;
+import com.stpl.pg4me.Class.BoardedTenantClass;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.easypg">
+    package="com.stpl.pg4me">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -14,16 +14,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".TenantDetailsActivity"></activity>
-        <activity android:name=".EditProfileActivity" />
-        <activity android:name=".TenantMainActivity" />
-        <activity android:name=".AddTenantActivity" />
-        <activity android:name=".ManagerDetailsActivity" />
-        <activity android:name=".NewMangerActivity" />
-        <activity android:name=".PhoneLoginActivity" />
-        <activity android:name=".EmailLoginActivity" />
-        <activity android:name=".WelcomeActivity" />
-        <activity android:name=".ManagerMainActivity">
+        <activity android:name="com.stpl.pg4me.TenantDetailsActivity"></activity>
+        <activity android:name="com.stpl.pg4me.EditProfileActivity" />
+        <activity android:name="com.stpl.pg4me.TenantMainActivity" />
+        <activity android:name="com.stpl.pg4me.AddTenantActivity" />
+        <activity android:name="com.stpl.pg4me.ManagerDetailsActivity" />
+        <activity android:name="com.stpl.pg4me.NewMangerActivity" />
+        <activity android:name="com.stpl.pg4me.PhoneLoginActivity" />
+        <activity android:name="com.stpl.pg4me.EmailLoginActivity" />
+        <activity android:name="com.stpl.pg4me.WelcomeActivity" />
+        <activity android:name="com.stpl.pg4me.ManagerMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

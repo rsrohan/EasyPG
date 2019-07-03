@@ -1,12 +1,8 @@
-package com.example.easypg;
+package com.stpl.pg4me;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
-import android.graphics.Bitmap;
 import android.net.Uri;
-import android.provider.MediaStore;
 import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,11 +11,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.example.easypg.Class.BoardedTenantClass;
-import com.example.easypg.Class.NotOnboardedTenantsClass;
-import com.example.easypg.Class.ProfilePictureClass;
+import com.stpl.pg4me.Class.BoardedTenantClass;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.analytics.FirebaseAnalytics;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -30,7 +25,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -44,6 +38,8 @@ public class TenantMainActivity extends AppCompatActivity {
     FirebaseAuth mAuth;
     StorageReference storageReference;
     String url;
+    String TAG="TenantMainActivity";
+    FirebaseAnalytics mFirebaseAnalytics;
 
 
 
@@ -62,6 +58,7 @@ public class TenantMainActivity extends AppCompatActivity {
         profile = findViewById(R.id.profiletenant);
         editprofile = findViewById(R.id.editprofile);
         firebaseUser=FirebaseAuth.getInstance().getCurrentUser();
+        mFirebaseAnalytics =FirebaseAnalytics.getInstance(this);
         try
         {
             StorageReference storageRef =
@@ -99,8 +96,10 @@ public class TenantMainActivity extends AppCompatActivity {
                 {
                     if (dataSnapshot1.getKey().equals(firebaseUser.getUid()))
                     {
+
                         tenant=dataSnapshot1.child("Details").getValue(BoardedTenantClass.class);
                         name.setText(tenant.getTenantname());
+                        logFirebaseEvent("findingTenant", tenant.getTenantname());
                         phone.setText(tenant.getTenantphone());
                         room.setText("ROOM: "+tenant.getTenantroom());
                         rent.setText("RENT AMOUNT: Rs "+tenant.getTenantrentamount());
@@ -141,5 +140,11 @@ public class TenantMainActivity extends AppCompatActivity {
 
     }
 
+    private void logFirebaseEvent(String eventName, String eventDetails)
+    {
+        Bundle params = new Bundle();
+        params.putString(TAG, eventDetails);
+        mFirebaseAnalytics.logEvent(eventName, params);
+    }
 
 }

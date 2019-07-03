@@ -1,4 +1,4 @@
-package com.example.easypg.Adapter;
+package com.stpl.pg4me.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,10 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.example.easypg.Class.BoardedTenantClass;
-import com.example.easypg.R;
-import com.example.easypg.TenantDetailsActivity;
+import com.stpl.pg4me.Class.BoardedTenantClass;
+import com.stpl.pg4me.R;
+import com.stpl.pg4me.TenantDetailsActivity;
 
 import java.util.List;
 

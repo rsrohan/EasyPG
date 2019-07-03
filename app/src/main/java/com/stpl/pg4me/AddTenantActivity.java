@@ -1,4 +1,4 @@
-package com.example.easypg;
+package com.stpl.pg4me;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.easypg.Class.NotOnboardedTenantsClass;
+import com.stpl.pg4me.Class.NotOnboardedTenantsClass;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseException;

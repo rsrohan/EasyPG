@@ -1,4 +1,4 @@
-package com.example.easypg.Class;
+package com.stpl.pg4me.Class;
 
 public class ProfilePictureClass {
     String url;

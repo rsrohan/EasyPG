@@ -1,4 +1,4 @@
-package com.example.easypg;
+package com.stpl.pg4me;
 
 import android.content.Intent;
 import android.support.annotation.NonNull;

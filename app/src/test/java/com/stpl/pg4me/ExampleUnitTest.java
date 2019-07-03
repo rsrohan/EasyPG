@@ -1,4 +1,4 @@
-package com.example.easypg;
+package com.stpl.pg4me;
 
 import org.junit.Test;
 
