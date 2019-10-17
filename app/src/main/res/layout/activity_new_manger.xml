@@ -51,5 +51,5 @@
         android:background="@drawable/background"
         android:layout_centerInParent="true"
         android:layout_below="@+id/passwordemailsignup"
-        android:layout_marginTop="15dp"/>
+        android:layout_marginTop="16dp"/>
 </RelativeLayout>
